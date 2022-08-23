@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .NavigationBody {
     display: flex;
@@ -89,17 +90,51 @@ section .wave.wave4 {
     }
 }
 
-.container {
+.Formcontainer {
     display: grid;
     place-items: center;
     text-align: center;
     justify-content: center;
 }
-
-.MainContainer {
+p {
+    margin: 10px;
+}
+/* .MainContainer {
     display: grid;
     place-items: center;
     text-align: center;
+} */
+.ContactForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    flex-direction: column;
+    gap: 30px;
+    /* background: #1d2b3a; */
+    background: gray;
+    margin: 20px;
+}
+.inputBox {
+    position: relative;
+    width: 250px;
+}
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    /* background: */
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+}
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    text-transform: uppercase;
 }
 .navigation {
     position: relative;
@@ -209,4 +244,10 @@ section .wave.wave4 {
 }
 .navigation ul a:nth-child(4).active ~ .indicator {
     transform: translateX(calc(75px * 6));
+}
+.AboutMe {
+    color: green;
+}
+.MainPageClass {
+    color: green;
 }

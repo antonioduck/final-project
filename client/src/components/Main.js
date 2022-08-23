@@ -4,7 +4,9 @@ class Main extends Component {
     render() {
         return (
             <>
-                <p>Welcome to my page</p>
+                <div className="MainPageClass">
+                    <p>Welcome to my page!!!</p>
+                </div>
             </>
         );
     }

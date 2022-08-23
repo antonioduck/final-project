@@ -17,7 +17,7 @@ export default class App extends Component {
         return (
             <>
                 <BrowserRouter>
-                    <Background />
+                    {/* <Background /> */}
                     <nav className="NavigationBody">
                         <div className="navigation">
                             <ul>

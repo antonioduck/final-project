@@ -4,7 +4,9 @@ class AboutMe extends Component {
     render() {
         return (
             <>
-                <p>here are some info about me </p>
+                <div className="AboutMe">
+                    <p>here are some info about me </p>
+                </div>
             </>
         );
     }

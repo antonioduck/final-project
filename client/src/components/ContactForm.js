@@ -25,37 +25,49 @@ export default function ContactForm() {
 
     return (
         <div className="MainContainer">
-            <div className="container">
+            <div className="Formcontainer">
                 <form onSubmit={sendEmail}>
-                    <div className="ConactForm">
+                    <div className="ContactForm">
                         <p>
                             Here you can send me easily get in contact with me
                             or leave me a comment.
                         </p>
-                        <div>
-                            <input type="text" placeholder="Name" name="name" />
-                        </div>
-                        <div>
-                            <input
-                                type="email"
-                                placeholder="E-mail"
-                                name="email"
-                            />
-                        </div>
-                        <div>
+                        <div className="inputBox">
                             <input
                                 type="text"
-                                placeholder="Subject"
-                                name="subject"
+                                // placeholder="Name"
+                                name="name"
+                                required="required"
                             />
+                            <span>Name</span>
                         </div>
-                        <div>
+                        <div className="inputBox">
+                            <input
+                                type="email"
+                                // placeholder="E-mail"
+                                name="email"
+                                required="required"
+                            />
+                            <span>E-mail</span>
+                        </div>
+                        <div className="inputBox">
+                            <input
+                                type="text"
+                                // placeholder="Subject"
+                                name="subject"
+                                required="required"
+                            />
+                            <span>Subject</span>
+                        </div>
+                        <div className="inputBox">
                             <textarea
-                                cols="10"
-                                rows="8"
-                                placeholder="Your message"
+                                cols="30"
+                                rows="6"
+                                // placeholder="Your message"
                                 name="message"
+                                required="required"
                             ></textarea>
+                            <span>Your Message</span>
                         </div>
                         <div>
                             <input type="submit" value="Send Message"></input>
