@@ -1,3 +1,212 @@
-body {
-    background-color: ghostwhite;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.NavigationBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    background-color: black;
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #3586ff;
+    overflow: hidden;
+}
+section .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+
+section .wave.wave1 {
+    animation: animate 10s linear infinite;
+    z-index: 1000;
+    opacity: 0.9;
+    animation-delay: 0s;
+    bottom: 0;
+}
+section .wave.wave2 {
+    animation: animate2 6s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+section .wave.wave3 {
+    animation: animate3 10s linear infinite;
+    z-index: 998;
+    opacity: 0.3;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+section .wave.wave4 {
+    animation: animate4 10s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+@keyframes animate3 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+@keyframes animate4 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.MainContainer {
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.navigation {
+    position: relative;
+    width: 400;
+    height: 70;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.navigation ul {
+    display: flex;
+    width: 350px;
+}
+.navigation ul {
+    position: relative;
+    list-style: none;
+    width: 600px;
+    height: 70px;
+    z-index: 1;
+}
+
+.navigation ul .a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+.navigation ul .a .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    /* color: black; */
+}
+
+.navigation ul .a.active .icon {
+    transform: translateY(-32px);
+}
+
+.navigation ul .a .text {
+    position: absolute;
+    color: black;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.navigation ul .a.active .text {
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.indicator {
+    position: absolute;
+    top: -50%;
+    left: 6%;
+
+    width: 78px;
+    height: 70px;
+    border-radius: 50%;
+    background: #29fd53;
+    border: 6px solid black;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.indicator::before {
+    content: "";
+    position: absolute;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 0px 10px 0 0 black;
+}
+.indicator::after {
+    content: "";
+    position: absolute;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: 0px 10px 0 0 black;
+}
+
+.navigation ul a:nth-child(1).active ~ .indicator {
+    transform: translateX(75px * 0);
+}
+.navigation ul a:nth-child(2).active ~ .indicator {
+    transform: translateX(calc(75px * 2));
+}
+.navigation ul a:nth-child(3).active ~ .indicator {
+    transform: translateX(calc(75px * 4));
+}
+.navigation ul a:nth-child(4).active ~ .indicator {
+    transform: translateX(calc(75px * 6));
 }
