@@ -114,6 +114,7 @@ p {
     /* background: #1d2b3a; */
     background: gray;
     margin: 20px;
+    border-radius: 8px;
 }
 .inputBox {
     position: relative;
@@ -128,6 +129,25 @@ p {
     outline: none;
     font-size: 1em;
 }
+.inputBox textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    /* background: */
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+}
+.inputBox textarea:valid ~ span,
+.inputBox textarea:focus ~ span {
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.8em;
+    padding: 0 10px;
+    background: gray;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+}
 .inputBox span {
     position: absolute;
     left: 0;
@@ -135,6 +155,50 @@ p {
     pointer-events: none;
     font-size: 1em;
     text-transform: uppercase;
+    color: rgba(15, 15, 15, 0.7);
+    transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.8em;
+    padding: 0 10px;
+    background: gray;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+}
+.inputButton {
+    background-color: #00dfc4;
+    font-size: 0.7em;
+    border: none;
+    padding: 10px 15px;
+    color:gray;
+    /* padding: 16px 32px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+}
+.inputButton:hover {
+    background-color: rgb(40, 154, 219);
+    color: white;
+    scale: 1.1;
+}
+/* .YourMessage {
+    text-align: center;
+    justify-content: center;
+} */
+
+::-webkit-input-placeholder {
+    margin-bottom: 30px;
+    text-align: center;
 }
 .navigation {
     position: relative;
@@ -206,7 +270,7 @@ p {
     width: 78px;
     height: 70px;
     border-radius: 50%;
-    background: #29fd53;
+    background: #00dfc4;
     border: 6px solid black;
     transition: 0.5s;
     z-index: -1;
@@ -250,4 +314,7 @@ p {
 }
 .MainPageClass {
     color: green;
+}
+.Projects{
+    color:green
 }

@@ -4,6 +4,10 @@ import Background from "./Background.js";
 import Main from "./Main";
 import MyProjects from "./MyProjects.js";
 import AboutMe from "./AboutMe.js";
+import ParticleBackground from "./ParticleBackground";
+import Particles from "react-tsparticles";
+import { loadFull } from "react-tsparticles";
+import { useCallback } from "react";
 import {
     BrowserRouter,
     Route,
@@ -12,10 +16,15 @@ import {
     Switch,
 } from "react-router-dom";
 
+
+
 export default class App extends Component {
     render() {
         return (
             <>
+                {/* <ParticleBackground /> */}
+
+            
                 <BrowserRouter>
                     {/* <Background /> */}
                     <nav className="NavigationBody">

@@ -61,6 +61,7 @@ export default function ContactForm() {
                         </div>
                         <div className="inputBox">
                             <textarea
+                                type="text"
                                 cols="30"
                                 rows="6"
                                 // placeholder="Your message"
@@ -70,7 +71,7 @@ export default function ContactForm() {
                             <span>Your Message</span>
                         </div>
                         <div>
-                            <input type="submit" value="Send Message"></input>
+                            <input className="inputButton" type="submit" value="Send Message"></input>
                         </div>
                     </div>
                 </form>
