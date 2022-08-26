@@ -13,21 +13,21 @@ function MyProjects() {
     };
     const [project, setProject] = useState();
     const projects = [
-        {
-            id: 0,
-            ProjectName: "Connect four",
-            ProjectDescription:
-                "This was the first project that I ever made using just HTLM , CSS and Javascript. Looking back on it now , makes me feel so proud.Two players are playing .If a players manages to have four pieces in a row (horizontal,vertical , or diagonal,wins.) ",
-            picture: "connect-four.png",
-            webpage: "https://de.yahoo.com/?p=us",
-        },
+        // {
+        //     id: 0,
+        //     ProjectName: "Connect four",
+        //     ProjectDescription:
+        //         "This was the first project that I ever made using just HTLM , CSS and Javascript. Looking back on it now , makes me feel so proud.Two players are playing .If a players manages to have four pieces in a row (horizontal,vertical , or diagonal,wins.) ",
+        //     picture: "connect-four.png",
+        //     webpage: "#",
+        // },
         {
             id: 1,
             ProjectName: "Petition",
             ProjectDescription:
                 "Petition was the first Project that I had to upload on Heroku app.My first contact with the world of back end .The user is able to register/login and sign the petition project. Is also able to see all the other users who alredy signed the project ",
             picture: "petition.png",
-            webpage: "https://de.yahoo.com/?p=us",
+            webpage: "https://antonio86petition.herokuapp.com/register",
         },
         {
             id: 2,
@@ -35,7 +35,7 @@ function MyProjects() {
             ProjectDescription:
                 "Imageboard is a quite cool project where the visitor is able to register or login , ulpoad an image with a description , and leave a comment in that specific image  ",
             picture: "welcome.jpg",
-            webpage: "https://de.yahoo.com/?p=us",
+            webpage: "https://anthony86imageboard.herokuapp.com/",
         },
         {
             id: 3,
@@ -43,7 +43,7 @@ function MyProjects() {
             ProjectDescription:
                 "Eventhough is quite self explanatory, social network is a project where the user is able to register/login ,modify its picture and its bio and being able to interract with other users as well  ",
             picture: "social.png",
-            webpage: "https://de.yahoo.com/?p=us",
+            webpage: "https://anthony86social-network.herokuapp.com/",
         },
     ];
 

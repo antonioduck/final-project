@@ -30,7 +30,7 @@ export default function App() {
     };
     return (
         <>
-            <div className="whrapper">
+            {/* <div className="whrapper">
                 <div id="Box3" className={loading ? "Box3" : null}>
                     <div className="div1"></div>
                     <div className="div1"></div>
@@ -59,7 +59,7 @@ export default function App() {
                         circles
                     </button>
                 </ul>
-            </div>
+            </div> */}
             {/* <ParticleBackground /> */}
 
             <BrowserRouter>
@@ -135,6 +135,7 @@ export default function App() {
                 <Route exact path="/AboutMe">
                     <AboutMe />
                 </Route>
+
                 <div className="whrapper">
                     <div id="Box3" className={loading ? "Box3" : null}>
                         <div className="div1"></div>
@@ -165,9 +166,6 @@ export default function App() {
                         </button>
                     </ul>
                 </div>
-                <Route exact path="/ContactForm">
-                    <ContactForm />
-                </Route>
 
                 <Route exact path="/MyProjects">
                     <MyProjects />
@@ -175,6 +173,9 @@ export default function App() {
                 {/* <Route exact path="/AboutMe">
                     <AboutMe />
                 </Route> */}
+                <Route exact path="/ContactForm">
+                    <ContactForm />
+                </Route>
                 <Route exact path="/">
                     <Main />
                 </Route>

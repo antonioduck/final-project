@@ -5,15 +5,14 @@ class Main extends Component {
         return (
             <>
                 <div className="MainPageClass">
-                    <p>Welcome to my page!!!</p>
+                    <p>Welcome to my page!</p>
                     <div className="MainPagecontent">
                         <p>
-                            Hello and welcome to my page dear viewer . This page
-                            was created as a final project in a Web developing
-                            Bootcamp.Inside here you can see some of my projects
-                            , a brief bio , and of course a contact form in case
-                            you are interested to get in contact with me .Thank
-                            you in advance for you visit .{" "}
+                            Hello and welcome to my page, dear viewer! This page
+                            was created as a final project in a web development
+                            bootcamp. Here you can see some of my projects, a
+                            brief bio and of course a contact form in case you
+                            are interested in contacting me. Enjoy your visit!{" "}
                         </p>
                     </div>
                 </div>

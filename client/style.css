@@ -21,11 +21,7 @@
     flex-wrap: wrap;
     display: flex;
 }
-@media (max-width: 800px) {
-    .navigation {
-        flex-direction: column;
-    }
-}
+
 section {
     position: relative;
     width: 100%;
@@ -240,6 +236,7 @@ section .wave.wave4 {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 8px;
+    z-index: 4000;
 }
 .inputButton:hover {
     background-color: rgb(40, 154, 219);
@@ -318,8 +315,8 @@ section .wave.wave4 {
     top: -50%;
     left: 6%;
 
-    width: 78px;
-    height: 70px;
+    width: 5em;
+    height: 4.5em;
     border-radius: 50%;
     background: #00dfc4;
     border: 6px solid black;
@@ -353,13 +350,13 @@ section .wave.wave4 {
     transform: translateX(75px * 0);
 }
 .navigation ul a:nth-child(2).active ~ .indicator {
-    transform: translateX(calc(75px * 2));
+    transform: translateX(calc(4.65em * 2));
 }
 .navigation ul a:nth-child(3).active ~ .indicator {
-    transform: translateX(calc(75px * 4));
+    transform: translateX(calc(4.65em * 4));
 }
 .navigation ul a:nth-child(4).active ~ .indicator {
-    transform: translateX(calc(75px * 6));
+    transform: translateX(calc(4.65em * 6));
 }
 /* .AboutMe {
     color:
@@ -555,6 +552,7 @@ section .wave.wave4 {
     /* background: black; */
     width: 100%;
     height: 100%;
+    /* pointer-events: none; */
 }
 .Box {
     position: absolute;
@@ -744,4 +742,36 @@ section .wave.wave4 {
     100% {
         transform: scale(1.6) translateY(-250px) rotate(360deg);
     }
+}
+@media all and (max-width: 500px) {
+    .NavigationBody {
+        width: 80vw;
+    }
+}
+@media all and (max-width: 500px) {
+    .navigation {
+        width: 80vw;
+    }
+}
+@media all and (max-width: 500px) {
+    .indicator {
+        width: 3em;
+        height: 3em;
+    }
+}
+@media all and (max-width: 500px) {
+    .navigation ul a icon {
+        width: 7vw;
+    }
+}
+.objects,
+.whrapper {
+    pointer-events: none;
+}
+
+.whrapper #Box3 .thisbutton2 {
+    pointer-events: auto;
+}
+.objects #Box #thisbutton {
+    pointer-events: auto;
 }
