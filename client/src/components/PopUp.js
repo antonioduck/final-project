@@ -1,17 +1,25 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 const Popup = ({ project, toglepopup }) => {
     console.log("the project is ", project);
-    //    const first = project[0];
-    //    const second = project[1];
+
     return (
-        <>
-            <Link to={`${project.webpage}`}>
-                <img src={project.picture} />
-                <h3>{project.ProjectDescription}</h3>
-            </Link>
-            <h3>{project.ProjectDescription}</h3>
-            <p onClick={toglepopup}>x</p>
-        </>
+        <div className="MainPopup">
+            <div className="Overlay"></div>
+            <div className="popupclass">
+                <div>
+                    <p onClick={toglepopup}>x</p>
+                </div>
+                <p>{project[0].ProjectName}</p>
+                <a href={project[0].webpage}>
+                    <img
+                        src={project[0].picture}
+                        width="150px"
+                        height="150px"
+                    />
+                </a>
+                <p>{project[0].ProjectDescription}</p>
+            </div>
+        </div>
     );
 };
 
