@@ -12,7 +12,8 @@ class Main extends Component {
                             was created as a final project in a web development
                             bootcamp. Here you can see some of my projects, a
                             brief bio and of course a contact form in case you
-                            are interested in contacting me. Enjoy your visit!{" "}
+                            are interested in contacting me. Enjoy your
+                            visit!!!!{" "}
                         </p>
                     </div>
                 </div>

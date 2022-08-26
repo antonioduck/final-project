@@ -34,7 +34,7 @@ function MyProjects() {
             ProjectName: "Imageboard",
             ProjectDescription:
                 "Imageboard is a quite cool project where the visitor is able to register or login , ulpoad an image with a description , and leave a comment in that specific image  ",
-            picture: "welcome.jpg",
+            picture: "imageboard.png",
             webpage: "https://anthony86imageboard.herokuapp.com/",
         },
         {
