@@ -7,17 +7,23 @@ const Popup = ({ project, toglepopup }) => {
             <div className="Overlay"></div>
             <div className="popupclass">
                 <div>
-                    <p onClick={toglepopup}>x</p>
+                    <p className="myX" onClick={toglepopup}>
+                        x
+                    </p>
                 </div>
                 <p>{project[0].ProjectName}</p>
-                <a href={project[0].webpage}>
-                    <img
-                        src={project[0].picture}
-                        width="150px"
-                        height="150px"
-                    />
-                </a>
+
+                <img
+                    className="Img2webpage"
+                    src={project[0].picture}
+                    width="150px"
+                    height="150px"
+                />
+
                 <p>{project[0].ProjectDescription}</p>
+                <p>
+                    <a href={project[0].webpage}>Visit Webpage</a>
+                </p>
             </div>
         </div>
     );

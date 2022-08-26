@@ -165,7 +165,6 @@ section .wave.wave4 {
     margin: 20px;
     border-radius: 8px;
     padding: 20px;
-    z-index: 1200;
 }
 .inputBox {
     position: relative;
@@ -292,7 +291,7 @@ section .wave.wave4 {
 }
 
 .navigation ul .a.active .icon {
-    transform: translateY(-32px);
+    transform: translateY(-1.2em);
 }
 
 .navigation ul .a .text {
@@ -347,7 +346,7 @@ section .wave.wave4 {
 } */
 
 .navigation ul a:nth-child(1).active ~ .indicator {
-    transform: translateX(75px * 0);
+    transform: translateX(calc(4.65em * 0));
 }
 .navigation ul a:nth-child(2).active ~ .indicator {
     transform: translateX(calc(4.65em * 2));
@@ -362,17 +361,20 @@ section .wave.wave4 {
     color:
 } */
 .MainPageClass {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
     text-align: center;
     background-color: black;
     color: lightblue;
-    /* display: grid;
-    align-items: center; */
-    justify-content: center;
-    height: 80vh;
+    top: 0;
+    align-items: center;
+    min-height: 80vh;
+    /* height: auto; */
     border: 10px;
-    /* margin: 10px; */
 }
 .MainPagecontent {
+    height: auto;
     text-align: center;
     border: 10px solid gray;
     background: gray;
@@ -381,6 +383,7 @@ section .wave.wave4 {
     border-radius: 15px;
     margin: 20px;
     font-size: 1.2em;
+    max-width: 500px;
 }
 .Projects {
     background: black;
@@ -393,6 +396,7 @@ section .wave.wave4 {
     justify-content: center;
     text-align: center;
     z-index: 100;
+    margin: 10px;
 }
 .loggedPic {
     width: 150px;
@@ -623,28 +627,51 @@ section .wave.wave4 {
 #thisbutton {
     display: block;
 
-    top: 0px;
+    top: 124px;
     right: 0px;
-    width: 60px;
-    height: 60px;
+    width: auto;
+    height: 3.9em;
     position: fixed;
     background: #00dfc4;
+    border: 5px;
     margin: 10px;
-    z-index: 999;
+    /* margin-top: 0; */
+    margin-bottom: 20px;
     border-radius: 50%;
+    padding: 10px;
+    z-index:1000;
+    font-size: 10px;
+    text-align: center;
 }
 
+#thisbutton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+        0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    /* font-weight: bold; */
+    scale: 1.1;
+}
 .thisbutton2 {
     display: block;
-    top: 0px;
+    top: 124px;
     left: 0px;
-    width: 60px;
-    height: 60px;
+    width: auto;
+    height: 3.9em;
     position: fixed;
     background: #00dfc4;
+    border: 5px;
     margin: 10px;
-    z-index: 999;
+    margin-bottom: 20px;
+    padding: 10px;
     border-radius: 50%;
+    z-index:1000;
+    font-size: 10px;
+    text-align: center;
+}
+.thisbutton2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+        0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    scale: 1.1;
+    /* font-weight: bold; */
 }
 
 .whrapper {
@@ -743,11 +770,11 @@ section .wave.wave4 {
         transform: scale(1.6) translateY(-250px) rotate(360deg);
     }
 }
-@media all and (max-width: 500px) {
+/* @media all and (max-width: 500px) {
     .NavigationBody {
         width: 80vw;
     }
-}
+} */
 @media all and (max-width: 500px) {
     .navigation {
         width: 80vw;
@@ -759,11 +786,62 @@ section .wave.wave4 {
         height: 3em;
     }
 }
-@media all and (max-width: 500px) {
-    .navigation ul a icon {
-        width: 7vw;
+
+/* @media all and (max-width: 450px) {
+    #thisbutton {
+        width: 3em;
+        height: 3em;
+    }
+} */
+/* @media all and (max-width: 450px) {
+    .thisbutton2 {
+        width: 3em;
+        height: 3em;
+    }
+} */
+@media all and (max-width: 421px) {
+    .navigation ul a:nth-child(1).active ~ .indicator {
+        transform: translateX(calc(4.65em * 0));
     }
 }
+@media all and (max-width: 421px) {
+    .navigation ul a:nth-child(2).active ~ .indicator {
+        transform: translateX(calc(4.65em * 1.1));
+    }
+}
+@media all and (max-width: 421px) {
+    .navigation ul a:nth-child(3).active ~ .indicator {
+        transform: translateX(calc(4.7em * 2.2));
+    }
+}
+@media all and (max-width: 421px) {
+    .navigation ul a:nth-child(4).active ~ .indicator {
+        transform: translateX(calc(4.7em * 3.3));
+    }
+}
+@media all and (max-width: 421px) {
+    .navigation ul .a.active .icon {
+        transform: translateY(-1.65em);
+    }
+}
+/* .navigation ul .a.active .icon {
+    transform: translateY(-1.2em);
+} */
+/* .navigation ul .a.active .icon {
+    transform: translateY(-32px);
+} */
+/* .navigation ul a:nth-child(1).active ~ .indicator {
+    transform: translateX(calc(4.65em * 0));
+}
+.navigation ul a:nth-child(2).active ~ .indicator {
+    transform: translateX(calc(4.65em * 2));
+}
+.navigation ul a:nth-child(3).active ~ .indicator {
+    transform: translateX(calc(4.65em * 4));
+}
+.navigation ul a:nth-child(4).active ~ .indicator {
+    transform: translateX(calc(4.65em * 6));
+} */
 .objects,
 .whrapper {
     pointer-events: none;
@@ -775,3 +853,9 @@ section .wave.wave4 {
 .objects #Box #thisbutton {
     pointer-events: auto;
 }
+.myX {
+    font-weight: bold;
+}
+/* .Img2webpage {
+    scale: 1.1;
+} */

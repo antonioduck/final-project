@@ -149,7 +149,7 @@ export default function App() {
                         <div className="div1"></div>
                         <div className="div1"></div>
                         <button className="thisbutton2" onClick={handleclick}>
-                            squares
+                            BG1
                         </button>
                     </div>
                 </div>
@@ -162,7 +162,7 @@ export default function App() {
                         <li></li>
                         <li></li>
                         <button id="thisbutton" onClick={handleToggle}>
-                            circles
+                            BG2
                         </button>
                     </ul>
                 </div>

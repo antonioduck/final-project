@@ -28,6 +28,7 @@ export default function ContactForm() {
             <div className="Formcontainer">
                 <form onSubmit={sendEmail}>
                     <div className="ContactForm">
+                        <h3>Contact Form</h3>
                         <p>
                             Here you can send me easily get in contact with me
                             or leave me a comment.
@@ -71,7 +72,11 @@ export default function ContactForm() {
                             <span>Your Message</span>
                         </div>
                         <div>
-                            <input className="inputButton" type="submit" value="Send Message"></input>
+                            <input
+                                className="inputButton"
+                                type="submit"
+                                value="Send Message"
+                            ></input>
                         </div>
                     </div>
                 </form>
