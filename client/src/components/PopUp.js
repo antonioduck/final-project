@@ -22,7 +22,9 @@ const Popup = ({ project, toglepopup }) => {
 
                 <p>{project[0].ProjectDescription}</p>
                 <p>
-                    <a href={project[0].webpage}>Visit Webpage</a>
+                    <a href={project[0].webpage} target="blank">
+                        Visit Webpage
+                    </a>
                 </p>
             </div>
         </div>
