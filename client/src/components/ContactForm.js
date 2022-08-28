@@ -30,8 +30,8 @@ export default function ContactForm() {
                     <div className="ContactForm">
                         <h3>Contact Form</h3>
                         <p>
-                            Here you can send me easily get in contact with me
-                            or leave me a comment.
+                            Here you can easily get in contact with me or leave
+                            me a comment.
                         </p>
                         <div className="inputBox">
                             <input

@@ -5,7 +5,7 @@ class Main extends Component {
         return (
             <>
                 <div className="MainPageClass">
-                    <p>Welcome to my page!</p>
+                    <p className="Welcomeclass">Welcome to my page!</p>
                     <div className="MainPagecontent">
                         <p>
                             Hello and welcome to my page, dear viewer! This page

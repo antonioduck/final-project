@@ -780,6 +780,20 @@ section .wave.wave4 {
         transform: scale(1.6) translateY(-250px) rotate(360deg);
     }
 }
+.Welcomeclass {
+    font-size: 30px;
+    padding: 0.5em;
+    text-decoration: none;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    /* font-size: 1em; */
+    font-family: "Inconsolata", monospace;
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px mediumslateblue,
+        0 0 42px mediumslateblue, 0 0 82px mediumslateblue,
+        0 0 92px mediumslateblue, 0 0 102px mediumslateblue,
+        0 0 151px mediumslateblue;
+}
 @media all and (max-width: 600px) {
     .navigation {
         width: fit-content;
