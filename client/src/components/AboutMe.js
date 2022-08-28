@@ -7,7 +7,8 @@ class AboutMe extends Component {
                 <div className="se-container">
                     <div className="se-slope">
                         <article className="se-content">
-                            <h3>fdshcskjdbcjdsbc </h3>
+                            <h3>fdshcskj
+                                dbcjdsbc </h3>
                             <p>
                                 Lorem Ipsum es simplemente el texto de relleno
                                 de las imprentas y archivos de texto. Lorem
@@ -31,7 +32,7 @@ class AboutMe extends Component {
                     </div>
                     <div className="se-slope">
                         <article className="se-content">
-                            <h3>fdshcskjdbcjdsbc </h3>
+                            <h3>fdshcskj dbcjdsbc </h3>
                             <p>
                                 Lorem Ipsum es simplemente el texto de relleno
                                 de las imprentas y archivos de texto. Lorem

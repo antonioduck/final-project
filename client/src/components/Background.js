@@ -1,47 +1,28 @@
-import { useState } from "react";
+//
+import React, { useState, useEffect } from "react";
 
 export default function Background() {
-    const [isActive, setActive] = useState(false);
+    const [show, setShow] = useState(true);
+    // const initialState = "Next";
+    // const [buttonText, setButtonText] = useState("Next"); //same as creating your state variable where "Next" is the default value for buttonText and setButtonText is the setter function for your state variable instead of setState
 
-    const [loading, setLoading] = useState(false);
+    // useEffect(() => {
+    //     if (buttonText !== initialState) {
+    //         setTimeout(() => setButtonText(initialState), [1000]);
+    //     }
+    // }, [buttonText]);
 
-    const handleToggle = () => {
-        setActive(!isActive);
-    };
-    const handleclick = () => {
-        setLoading(!loading);
-    };
+    // const changeText = (text) => setButtonText(text);
     return (
         <>
-            <div className="whrapper">
-                <div id="Box3" className={loading ? "Box3" : null}>
-                    <div className="div1"></div>
-                    <div className="div1"></div>
-                    <div className="div1"></div>
-                    <div className="div1"></div>
-                    <div className="div1"></div>
-                    <div className="div1"></div>
-                    <div className="div1"></div>
-                    <div className="div1"></div>
-                    <div className="div1"></div>
-                    <div className="div1"></div>
-                    <button className="thisbutton2" onClick={handleclick}>
-                        squares
-                    </button>
-                </div>
-            </div>
-            <div className="objects">
-                <ul id="Box" className={isActive ? "Box" : null}>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <button id="thisbutton" onClick={handleToggle}>
-                        circles
-                    </button>
-                </ul>
+            {/* <button type="button" onClick={() => changeText("newText")}>
+                {buttonText}
+            </button> */}
+
+            <div className="MyApp">
+                {show ? <h1>Hello World !</h1> : null}
+                <button onClick={() => setShow(true)}>Show</button>
+                <button onClick={() => setShow(false)}>Hide</button>
             </div>
         </>
     );
