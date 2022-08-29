@@ -31,7 +31,7 @@ export default function AboutMe() {
                             I worked in hotels in Athens and Santorini for
                             almost 7 years . After that I came in Berlin where I
                             worked in gastronomy for two years . When my
-                            conttract finished , I decided to take a break from
+                            contract finished , I decided to take a break from
                             work and improve my knowledge in German language .
                             That was when coding came into my life.
                         </p>
@@ -55,10 +55,10 @@ export default function AboutMe() {
                         <h3>Wanna know more?</h3>
                         <p>
                             If you like what you read so far, you can take a
-                            look at my Linkedin , Github and Instagram acount or
+                            look at my Linkedin , Github and Instagram account or
                             download my CV by clicking on the button . If you
                             want to , you can easily leave me a comment in the
-                            "Contakt me" section .
+                            "Contact me" section .
                         </p>
                         <p>
                             <a
