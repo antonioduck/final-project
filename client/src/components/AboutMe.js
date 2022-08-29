@@ -2,14 +2,14 @@ import { Component } from "react";
 
 export default function AboutMe() {
     const SendPdf = () => {
-        fetch("../cv2022.pdf").then((response) => {
+        fetch("../Teneketzis_Antonios_cv2022.pdf").then((response) => {
             response.blob().then((blob) => {
                 // Creating new object of PDF file
                 const fileURL = window.URL.createObjectURL(blob);
                 // Setting various property values
                 let alink = document.createElement("a");
                 alink.href = fileURL;
-                alink.download = "../cv2022.pdf";
+                alink.download = "../Teneketzis_Antonios_cv2022.pdf";
                 alink.click();
             });
         });
@@ -19,75 +19,85 @@ export default function AboutMe() {
             <div className="se-container">
                 <div className="se-slope">
                     <article className="se-content">
-                        <h3>fdshcskj dbcjdsbc </h3>
+                        <h3>A few words about me ... </h3>
+
                         <p>
-                            <img
-                                className="loggedPic"
-                                src="../linkedin.jpg"
-                                alt=""
-                            ></img>
-                            <button id="AboutMe" onClick={SendPdf}>
-                                send Pdf
+                            I was born in Greece and I came in Berlin 3.5 years
+                            ago . I studied Biomedical Engineering in Greece and
+                            I worked on that field for almost a year . After
+                            that , due to crisis in Greece , I was unable to
+                            find a job in my field , so I decided to change my
+                            career path . I completed a Bachelor in Tourism and
+                            I worked in hotels in Athens and Santorini for
+                            almost 7 years . After that I came in Berlin where I
+                            worked in gastronomy for two years . When my
+                            conttract finished , I decided to take a break from
+                            work and improve my knowledge in German language .
+                            That was when coding came into my life.
+                        </p>
+                    </article>
+                </div>
+                <div className="se-slope">
+                    <article className="se-content">
+                        <h3>Why coding ? </h3>
+                        <p>
+                            I always loved computers and learning new staff . I
+                            think coding is a quite interesting working field
+                            with many possibilities and opportunities and will
+                            always be in high demand . It is also a safe working
+                            choice because you are capable of working homeoffice
+                            100% in case another coronavirus wave strikes .
+                        </p>
+                    </article>
+                </div>
+                <div className="se-slope">
+                    <article className="se-content">
+                        <h3>Wanna know more?</h3>
+                        <p>
+                            If you like what you read so far, you can take a
+                            look at my Linkedin , Github and Instagram acount or
+                            download my CV by clicking on the button . If you
+                            want to , you can easily leave me a comment in the
+                            "Contakt me" section .
+                        </p>
+                        <p>
+                            <a
+                                href="https://www.linkedin.com/in/teneketzis-antonios-664b10158/"
+                                target="blank"
+                            >
+                                <img
+                                    className="loggedPic"
+                                    src="../linkedin.jpg"
+                                    alt=""
+                                ></img>
+                            </a>
+                            <a
+                                href="https://github.com/antonioduck"
+                                target="blank"
+                            >
+                                <img
+                                    className="loggedPic"
+                                    src="../github.jpg"
+                                    alt=""
+                                ></img>
+                            </a>
+                            <a
+                                href="https://www.instagram.com/antonio_tenek/"
+                                target="blank"
+                            >
+                                <img
+                                    className="loggedPic"
+                                    src="../instagram.jpg"
+                                    alt=""
+                                ></img>
+                            </a>
+                        </p>
+                        <p>
+                            You can easily download my CV as PDF by clicking on
+                            the button:
+                            <button id="AboutMeButton" onClick={SendPdf}>
+                                Get CV
                             </button>
-                            Lorem Ipsum es simplemente el texto de relleno de
-                            las imprentas y archivos de texto. Lorem Ipsum ha
-                            sido el texto de relleno estándar de las industrias
-                            desde el año 1500, cuando un impresor (N. del T.
-                            persona que se dedica a la imprenta) desconocido usó
-                            una galería de textos y los mezcló de tal manera que
-                            logró hacer un libro de textos especimen. No sólo
-                            sobrevivió 500 años, sino que tambien ingresó como
-                            texto de relleno en documentos electrónicos,
-                            quedando esencialmente igual al original. Fue
-                            popularizado en los 60s con la creación de las hojas
-                            "Letraset", las cuales contenian pasajes de Lorem
-                            Ipsum, y más recientemente con software de
-                            autoedición, como por ejemplo Aldus PageMaker, el
-                            cual incluye versiones de Lorem Ipsum.
-                        </p>
-                    </article>
-                </div>
-                <div className="se-slope">
-                    <article className="se-content">
-                        <h3>fdshcskj dbcjdsbc </h3>
-                        <p>
-                            Lorem Ipsum es simplemente el texto de relleno de
-                            las imprentas y archivos de texto. Lorem Ipsum ha
-                            sido el texto de relleno estándar de las industrias
-                            desde el año 1500, cuando un impresor (N. del T.
-                            persona que se dedica a la imprenta) desconocido usó
-                            una galería de textos y los mezcló de tal manera que
-                            logró hacer un libro de textos especimen. No sólo
-                            sobrevivió 500 años, sino que tambien ingresó como
-                            texto de relleno en documentos electrónicos,
-                            quedando esencialmente igual al original. Fue
-                            popularizado en los 60s con la creación de las hojas
-                            "Letraset", las cuales contenian pasajes de Lorem
-                            Ipsum, y más recientemente con software de
-                            autoedición, como por ejemplo Aldus PageMaker, el
-                            cual incluye versiones de Lorem Ipsum.
-                        </p>
-                    </article>
-                </div>
-                <div className="se-slope">
-                    <article className="se-content">
-                        <h3>Qué es Lorem Ipsum</h3>
-                        <p>
-                            Lorem Ipsum es simplemente el texto de relleno de
-                            las imprentas y archivos de texto. Lorem Ipsum ha
-                            sido el texto de relleno estándar de las industrias
-                            desde el año 1500, cuando un impresor (N. del T.
-                            persona que se dedica a la imprenta) desconocido usó
-                            una galería de textos y los mezcló de tal manera que
-                            logró hacer un libro de textos especimen. No sólo
-                            sobrevivió 500 años, sino que tambien ingresó como
-                            texto de relleno en documentos electrónicos,
-                            quedando esencialmente igual al original. Fue
-                            popularizado en los 60s con la creación de las hojas
-                            "Letraset", las cuales contenian pasajes de Lorem
-                            Ipsum, y más recientemente con software de
-                            autoedición, como por ejemplo Aldus PageMaker, el
-                            cual incluye versiones de Lorem Ipsum.
                         </p>
                     </article>
                 </div>

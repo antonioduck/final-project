@@ -371,7 +371,7 @@ section .wave.wave4 {
     color: lightblue;
     top: 0;
     align-items: center;
-    min-height: 70vh;
+    /* min-height: 70vh; */
     /* height: auto; */
     border: 10px;
 }
@@ -794,6 +794,27 @@ section .wave.wave4 {
         0 0 92px mediumslateblue, 0 0 102px mediumslateblue,
         0 0 151px mediumslateblue;
 }
+.objects,
+.whrapper {
+    pointer-events: none;
+}
+
+.whrapper #Box3 .thisbutton2 {
+    pointer-events: auto;
+}
+.objects #Box #thisbutton {
+    pointer-events: auto;
+}
+.myX {
+    font-weight: bold;
+}
+/* .Img2webpage {
+    scale: 1.1;
+} */
+
+.MyApp {
+    color: aliceblue;
+}
 @media all and (max-width: 600px) {
     .navigation {
         width: fit-content;
@@ -861,42 +882,22 @@ section .wave.wave4 {
         top: 0px;
     }
 }
-/* .navigation ul .a.active .icon {
-    transform: translateY(-1.2em);
-} */
-/* .navigation ul .a.active .icon {
-    transform: translateY(-32px);
-} */
-/* .navigation ul a:nth-child(1).active ~ .indicator {
-    transform: translateX(calc(4.65em * 0));
-}
-.navigation ul a:nth-child(2).active ~ .indicator {
-    transform: translateX(calc(4.65em * 2));
-}
-.navigation ul a:nth-child(3).active ~ .indicator {
-    transform: translateX(calc(4.65em * 4));
-}
-.navigation ul a:nth-child(4).active ~ .indicator {
-    transform: translateX(calc(4.65em * 6));
-} */
-.objects,
-.whrapper {
-    pointer-events: none;
-}
 
-.whrapper #Box3 .thisbutton2 {
-    pointer-events: auto;
-}
-.objects #Box #thisbutton {
-    pointer-events: auto;
-}
-.myX {
+#AboutMeButton {
     font-weight: bold;
+    margin-top: 5px;
+    margin-left: 10px;
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9); */
+    font-family: "Bitter", "Trebuchet MS", Arial;
+    width: 5em;
+    height: 2.3em;
+    padding: 5px;
+    background-color: #00dfc4;
+    border-radius: 4px;
 }
-/* .Img2webpage {
-    scale: 1.1;
-} */
-
-.MyApp {
-    color: aliceblue;
+#AboutMeButton:hover {
+    scale: 1.05;
+    background-color: #000;
+    color: #00dfc4;
+    border: 2px solid #00dfc4;
 }
