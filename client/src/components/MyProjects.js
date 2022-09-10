@@ -13,14 +13,14 @@ function MyProjects() {
     };
     const [project, setProject] = useState();
     const projects = [
-        // {
-        //     id: 0,
-        //     ProjectName: "Connect four",
-        //     ProjectDescription:
-        //         "This was the first project that I ever made using just HTLM , CSS and Javascript. Looking back on it now , makes me feel so proud.Two players are playing .If a players manages to have four pieces in a row (horizontal,vertical , or diagonal,wins.) ",
-        //     picture: "connect-four.png",
-        //     webpage: "#",
-        // },
+        {
+            id: 0,
+            ProjectName: "Connect four",
+            ProjectDescription:
+                "This was the first project that I ever made using just HTLM , CSS and Javascript. Looking back on it now , makes me feel so proud.Two players are playing .If a players manages to have four pieces in a row (horizontal,vertical , or diagonal,wins.) ",
+            picture: "connect-four.png",
+            webpage: "https://antonioduck.github.io/connect-four/index.html",
+        },
         {
             id: 1,
             ProjectName: "Petition",

@@ -21,7 +21,7 @@ export default function ContactForm() {
                 }
             );
         e.target.reset();
-        confirm("Your message was sent!!");
+        confirm("Your message was sent!!0 e");
     }
 
     return (
